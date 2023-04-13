@@ -70,10 +70,19 @@ h1{
     color: #333;
     background-color: burlywood;
 }
+.chaining.second:hover{
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
 
 .chaining.third {
     border: none;
     background-color: goldenrod;
+}
+.chaining.third:hover{
+    background-color: #55efc4;
+    transition: 0.5s;
+    border-radius: 25%;
 }
 
 .chaining.fourth:hover {
