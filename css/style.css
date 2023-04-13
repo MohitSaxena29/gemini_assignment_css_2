@@ -1,0 +1,141 @@
+body {
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    padding: 1rem;
+    margin: 1em;
+    font-size: 2em;
+}
+
+.box-rem {
+    background-color: #c7ecee;
+    width: 30rem;
+    height: 10rem;
+}
+
+.box-em {
+    background-color: #fdcb6e;
+    width: 30em;
+    height: 10em;
+}
+
+.box-vh {
+    background-color: #55efc4;
+    width: 30vh;
+    height: 10vh;
+}
+
+.box-vw {
+    background-color: #dfe6e9;
+    width: 30vw;
+    height: 10vw;
+}
+
+.box-px {
+    background-color: #ff7675;
+    width: 300px;
+    height: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+.chaining {
+    display : inline-block;
+    padding: 20px;
+    margin: 10px 70px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+
+}
+
+
+.chaining.first{
+    background-color: aqua;
+}
+
+.chaining.second {
+    border-color: #333;
+    border-radius: 2px solid black;
+    color: #333;
+    background-color: burlywood;
+}
+
+.chaining.third {
+    border: none;
+    background-color: goldenrod;
+}
+
+.chaining.fourth:hover {
+    background-color: #aaa;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.descendant_selector{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.descendant_selector p{
+    background-color: aqua;
+}
+
+.child_selector{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+.child_selector > p{
+    background-color: goldenrod;
+}
+
+.sibling{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.sibling_selector + p{
+    background-color: #ff7675;
+}
+
+.general{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+.general_sibling_selector ~ p{
+    background-color: #55efc4;
+}
+
+.transition_transform{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    
+}
+.transition_transform p{
+    text-align: center;
+}
+
+.transition_transform:hover{
+    background-color: green;
+    transform: rotate(180deg);
+}
